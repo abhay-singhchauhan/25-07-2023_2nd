@@ -38,5 +38,14 @@
     let title = document.querySelector(".title");
     title.style.fontWeight = "bold";
     title.style.color = "green";
+
+    let li = document.querySelector("li:nth-child(3)");
+    let liAll = document.querySelectorAll("li");
+    li.style.backgroundColor = "green"
+
+    liAll.forEach((ele)=>{
+        ele.style.fontWeight = "bold"
+    })
+    console.log(header)
 </script>
 </html>
