@@ -46,6 +46,22 @@
     liAll.forEach((ele)=>{
         ele.style.fontWeight = "bold"
     })
-    console.log(header)
+
+    let item = document.getElementById("items");
+    let l = document.createElement("li");
+    l.innerText = "Item 5";
+    l.className = "fifth"
+    item.append(l)
+    
+    let fifthone = document.getElementsByClassName("fifth");
+    fifthone[0].style.backgroundColor = "pink";
+
+    let fifTag = document.getElementsByTagName("li");
+    for(let i = 0; i < fifTag.length; i++) {
+        if(i === fifTag.length-1) {
+            fifTag[i].style.backgroundColor =  "purple";
+        }
+    }
+    console.log(item)
 </script>
 </html>
